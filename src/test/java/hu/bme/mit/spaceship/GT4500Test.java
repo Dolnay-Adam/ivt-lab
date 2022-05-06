@@ -160,6 +160,7 @@ public class GT4500Test {
     when(mockTSP.isEmpty()).thenReturn(false);
     when(mockTSS.isEmpty()).thenReturn(true);
     when(mockTSS.fire(1)).thenReturn(true);
+    when(mockTSP.fire(1)).thenReturn(true);
 
     boolean result1 = ship.fireTorpedo(FiringMode.SINGLE);
     when(mockTSP.isEmpty()).thenReturn(true); 
